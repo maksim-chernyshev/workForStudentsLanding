@@ -1,0 +1,41 @@
+.navigation__button {
+    margin-left: 16px;
+    padding: 0;
+
+    color: var(--white);
+    text-decoration: none;
+
+    border: none;
+    background-color: transparent;
+
+    cursor: pointer;
+
+    @media (min-width: 1024px) {
+        margin-left: 32px;
+    }
+
+    &--accent {
+        margin-left: 24px;
+        padding: 10px 16px;
+
+        text-transform: capitalize;
+
+        background-color: var(--violet);
+
+        @media (min-width: 1024px) {
+            display: flex;
+            margin-left: 40px;
+            padding: 16px 24px;
+
+            text-transform: none;
+        }
+
+        span {
+            display: none;
+
+            @media (min-width: 1024px) {
+                display: block;
+            }
+        }
+    }
+}
