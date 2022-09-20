@@ -32,11 +32,13 @@
     color: var(--black);
     background-color: var(--yellow);
 
-    @media (min-width: 1024px) {
-        font-size: 20px;
-    }
-
     &:hover {
         background-color: var(--yellow-dark);
+    }
+}
+
+.button--accent {
+    @media (min-width: 1024px) {
+        font-size: 20px;
     }
 }

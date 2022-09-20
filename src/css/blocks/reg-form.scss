@@ -6,7 +6,6 @@
     border-radius: 16px;
     background-color: var(--white);
 
-
     &--wide {
         @media (min-width: 768px) {
             grid-template-columns: 1fr 1fr auto;

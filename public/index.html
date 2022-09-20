@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Автор24</title>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body class="root">
@@ -67,7 +68,7 @@
                        placeholder="E-mail"
                        required
                 >
-                <button class="reg-form__submit-btn button" type="submit">Начать зарабатывать</button>
+                <button class="reg-form__submit-btn button button--accent" type="submit">Начать зарабатывать</button>
 
                 <p class="reg-form__policy text">
                     Нажимая на&nbsp;кнопку, я&nbsp;соглашаюсь на&nbsp;обработку персональных данных и&nbsp;с&nbsp;правилами
@@ -98,7 +99,7 @@
         </div>
     </section>
     <section class="features content-wrapper">
-        <h2 class="features__title visually-hidden">Преимущества сервиса</h2>
+        <h2 class="visually-hidden">Преимущества сервиса</h2>
         <div class="features__inner">
             <div class="features__item">
                 <div class="features__item-emoji">📃</div>
@@ -187,8 +188,9 @@
             </div>
         </div>
     </section>
+
     <section class="banner content-wrapper">
-        <h2 class="banner__title visually-hidden">Начни зарабатывать с Автор24</h2>
+        <h2 class="visually-hidden">Начни зарабатывать с Автор24</h2>
         <div class="banner__inner">
             <p class="banner__text banner__text--mobile heading heading--2">
                 <span>3&nbsp;000+ заказов</span>
@@ -199,9 +201,131 @@
                 Более <span>3&nbsp;000 заказов</span> на&nbsp;платформе каждый день
             </p>
 
-            <button class="banner__button button button--yellow">Начать зарабатывать</button>
+            <button class="banner__button button button--yellow button--accent">Начать зарабатывать</button>
+        </div>
+    </section>
+
+    <section class="experts content-wrapper" id="experts">
+        <h2 class="visually-hidden">Отзывы экспертов</h2>
+        <p class="experts__title experts__title--mobile heading heading--2">
+            Эксперты довольны работой на&nbsp;платформе Автор24
+        </p>
+
+        <div class="experts__reviews swiper-wrapper">
+            <p class="experts__title experts__title--desktop heading heading--2">
+                Эксперты довольны работой на&nbsp;платформе Автор24
+            </p>
+            <section class="experts__review swiper-slide">
+                <img class="experts__review-img" src="img/img-expert.png" alt="Фото эксперта">
+
+                <h4 class="experts__review-name heading heading--4">Имя Фамилия</h4>
+                <p class="experts__review-text text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam atque commodi consequuntur cumque
+                    deleniti
+                </p>
+            </section>
+
+            <section class="experts__review swiper-slide">
+                <img class="experts__review-img" src="img/img-expert.png" alt="Фото эксперта">
+
+                <h4 class="experts__review-name heading heading--4">Имя Фамилия</h4>
+                <p class="experts__review-text text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam atque commodi consequuntur cumque
+                    deleniti esse, facilis illum nisi officia, perspiciatis porro quaerat sed velit. Aliquam commodi
+                    nostrum omnis ratione suscipit?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
+                    atque commodi consequuntur cumque
+                    deleniti esse, facilis illum nisi officia, perspiciatis porro quaerat sed velit. Aliquam commodi
+                    nostrum omnis ratione suscipit?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
+                    atque commodi consequuntur cumque
+                    deleniti esse, facilis illum nisi officia, perspiciatis porro quaerat sed velit. Aliquam commodi
+                    nostrum omnis ratione suscipit?
+                </p>
+            </section>
+
+            <section class="experts__review swiper-slide">
+                <img class="experts__review-img" src="img/img-expert.png" alt="Фото эксперта">
+
+                <h4 class="experts__review-name heading heading--4">Имя Фамилия</h4>
+                <p class="experts__review-text text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam atque commodi consequuntur cumque
+                    deleniti esse, facilis illum nisi officia, perspiciatis porro quaerat sed velit. Aliquam commodi
+                    nostrum omnis ratione suscipit?
+                </p>
+            </section>
+
+            <form class="experts__form reg-form swiper-slide" action="https://a24.biz/reg/promoAuthor"
+                  method="post">
+                <input type="hidden" name="secondname" value="Фамилия">
+
+                <input class="reg-form__input input"
+                       type="text"
+                       placeholder="Твое имя"
+                       name="firstname"
+                       aria-label="Укажите свое имя"
+                       required
+                >
+                <input class="reg-form__input input"
+                       type="email"
+                       name="email"
+                       aria-label="Укажите свой email"
+                       placeholder="E-mail"
+                       required
+                >
+                <button class="reg-form__submit-btn button" type="submit">Начать зарабатывать</button>
+
+                <p class="reg-form__policy text">
+                    Нажимая на&nbsp;кнопку, я&nbsp;соглашаюсь на&nbsp;обработку персональных данных и&nbsp;с&nbsp;правилами
+                    пользования Платформой
+                </p>
+            </form>
+
+            <section class="experts__review swiper-slide">
+                <img class="experts__review-img" src="img/img-expert.png" alt="Фото эксперта">
+
+                <h4 class="experts__review-name heading heading--4">Имя Фамилия</h4>
+                <p class="experts__review-text text">
+                    Очень классный сервис. Всегда есть заказы от студентов: просят проконсультировать или разобрать
+                    вместе задачу. Бывают и долгие заказы, не на один день. Все очень нравится. С Автор24 познала
+                    все
+                    прелести удаленной работы. Кстати, отзыв пишу с первой линии в Анталье Очень классный сервис. Всегда
+                    есть заказы от студентов: просят проконсультировать или разобрать
+                    вместе задачу. Бывают и долгие заказы, не на один день. Все очень нравится. С Автор24 познала
+                    все
+                    прелести удаленной работы. Кстати, отзыв пишу с первой линии в Анталье
+                </p>
+            </section>
+
+            <section class="experts__review swiper-slide">
+                <img class="experts__review-img" src="img/img-expert.png" alt="Фото эксперта">
+
+                <h4 class="experts__review-name heading heading--4">Имя Фамилия</h4>
+                <p class="experts__review-text text">
+                    Очень классный сервис. Всегда есть заказы от студентов: просят проконсультировать или разобрать
+                </p>
+            </section>
+
+            <section class="experts__review swiper-slide">
+                <img class="experts__review-img" src="img/img-expert.png" alt="Фото эксперта">
+
+                <h4 class="experts__review-name heading heading--4">Имя Фамилия</h4>
+                <p class="experts__review-text text">
+                    Очень классный сервис. Всегда есть заказы от студентов: просят проконсультировать или разобрать
+                    вместе задачу. Бывают и долгие заказы, не на один день. Все очень нравится. С Автор24 познала
+                    все
+                    прелести удаленной работы. Кстати, отзыв пишу с первой линии в АнтальеОчень классный сервис. Всегда есть заказы от студентов: просят проконсультировать или разобрать
+                    вместе задачу. Бывают и долгие заказы, не на один день. Все очень нравится. С Автор24 познала
+                    все
+                    прелести удаленной работы. Кстати, отзыв пишу с первой линии в АнтальеОчень классный сервис. Всегда есть заказы от студентов: просят проконсультировать или разобрать
+                    вместе задачу. Бывают и долгие заказы, не на один день. Все очень нравится. С Автор24 познала
+                    все
+                    прелести удаленной работы. Кстати, отзыв пишу с первой линии в Анталье
+                </p>
+            </section>
         </div>
     </section>
 </main>
+
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/main.min.js"></script>
 </body>
 </html>
