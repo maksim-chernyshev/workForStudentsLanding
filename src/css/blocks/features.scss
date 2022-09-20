@@ -1,12 +1,15 @@
 .features {
     padding-top: 20px;
+    padding-bottom: 20px;
 
     @media (min-width: 768px) {
         padding-top: 32px;
+        padding-bottom: 32px;
     }
 
     @media (min-width: 1024px) {
         padding-top: 50px;
+        padding-bottom: 50px;
     }
 }
 
