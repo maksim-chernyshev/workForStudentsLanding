@@ -34,8 +34,7 @@
 .experts__reviews {
     @media(min-width: 768px) {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(320px, 48%));
-        justify-content: space-between;
+        grid-template-columns: 1fr 1fr;
         gap: 24px;
     }
 
@@ -44,7 +43,7 @@
     }
 
     @media(min-width: 1440px) {
-        grid-template-columns: repeat(auto-fill, minmax(380px, 400px));
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
