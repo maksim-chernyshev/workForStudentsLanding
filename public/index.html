@@ -9,36 +9,94 @@
     <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body class="root">
-<div class="bg-container">
-    <header class="header content-wrapper" data-section="header">
-        <div class="header__logo">
-            <a class="header__logo-link" href="/" data-js="logoLink">
-                <img class="header__logo-img"
-                     src="img/logo-main.svg"
-                     alt="Автор24"
-                     width="168"
-                     height="40"
-                >
-            </a>
-        </div>
-        <nav class="header__navigation navigation">
-            <button class="navigation__button" data-anchor="features">Преимущества</button>
-            <button class="navigation__button" data-anchor="reviews">Отзывы</button>
-            <button class="navigation__button" data-anchor="start">Как начать</button>
-            <button class="navigation__button" data-anchor="faq">FAQ</button>
-            <button class="navigation__button navigation__button--accent button" data-anchor="hero">
-                <span>Начать</span>&nbsp;зарабатывать
-            </button>
-        </nav>
-        <button class="header__menu-btn" type="button" data-btn="openNavigation">
-            <img class="header__menu-img"
-                 src="img/icon-burger-menu.svg"
-                 alt="Меню"
-                 width="24"
-                 height="24"
+<header class="header" data-section="header">
+    <div class="header__logo">
+        <a class="header__logo-link" href="/" data-js="logoLink">
+            <img class="header__logo-img"
+                 src="img/logo-main.svg"
+                 alt="Автор24"
+                 width="168"
+                 height="40"
             >
+        </a>
+    </div>
+    <nav class="header__navigation navigation">
+        <button class="navigation__button" data-anchor="features">Преимущества</button>
+        <button class="navigation__button" data-anchor="reviews">Отзывы</button>
+        <button class="navigation__button" data-anchor="start">Как начать</button>
+        <button class="navigation__button" data-anchor="faq">FAQ</button>
+        <button class="navigation__button navigation__button--accent button" data-anchor="hero">
+            <span>Начать</span>&nbsp;зарабатывать
         </button>
-    </header>
-</div>
+    </nav>
+    <button class="header__menu-btn" type="button" data-btn="openNavigation">
+        <img class="header__menu-img"
+             src="img/icon-burger-menu.svg"
+             alt="Меню"
+             width="24"
+             height="24"
+        >
+    </button>
+</header>
+
+<main class="main">
+    <section class="hero">
+        <div class="hero__bg-wrapper">
+            <img class="hero__bg-img" src="img/img-hero.jpg" alt="">
+        </div>
+        <div class="hero__inner content-wrapper">
+            <h1 class="hero__title heading--1">Подработка для студентов на&nbsp;дому</h1>
+            <p class="hero__text text text--bigger">
+                Вы&nbsp;&mdash; студент, аспирант, выпускник вуза или преподаватель?
+                Оказывайте помощь напрямую&nbsp;&mdash; выбирайте из&nbsp;более 1&nbsp;000 заказов ежедневно!
+            </p>
+            <form class="hero__form reg-form reg-form--wide" action="https://a24.biz/reg/promoAuthor" method="post">
+                <input type="hidden" name="secondname" value="Фамилия">
+
+                <input class="reg-form__input input"
+                       type="text"
+                       placeholder="Твое имя"
+                       name="firstname"
+                       aria-label="Укажите свое имя"
+                       required
+                >
+                <input class="reg-form__input input"
+                       type="email"
+                       name="email"
+                       aria-label="Укажите свой email"
+                       placeholder="E-mail"
+                       required
+                >
+                <button class="reg-form__submit-btn button" type="submit">Начать зарабатывать</button>
+
+                <p class="reg-form__policy text">
+                    Нажимая на&nbsp;кнопку, я&nbsp;соглашаюсь на&nbsp;обработку персональных данных и&nbsp;с&nbsp;правилами
+                    пользования Платформой
+                </p>
+            </form>
+
+            <ul class="hero__list">
+                <li class="hero__list-item">
+                    <h5 class="hero__list-item-title heading--5">Доход до&nbsp;50&nbsp;000&nbsp;₽ 🤑</h5>
+                    <p class="hero__list-item-text text">
+                        Зарабатывайте на&nbsp;своих знаниях в&nbsp;любое удобное время
+                    </p>
+                </li>
+                <li class="hero__list-item">
+                    <h5 class="hero__list-item-title heading--5">0%&nbsp;комиссия 💸</h5>
+                    <p class="hero__list-item-text text">
+                        Никаких денежных вложений с&nbsp;вашей стороны не&nbsp;требуется
+                    </p>
+                </li>
+                <li class="hero__list-item">
+                    <h5 class="hero__list-item-title heading--5">Безопасность 👍</h5>
+                    <p class="hero__list-item-text text">
+                        Ваши персональные данные защищены от&nbsp;использования третьими лицами
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+</main>
 </body>
 </html>

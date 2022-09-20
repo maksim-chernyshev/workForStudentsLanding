@@ -1,0 +1,29 @@
+.reg-form {
+    display: grid;
+    gap: 12px;
+    padding: 16px;
+
+    border-radius: 16px;
+    background-color: var(--white);
+
+
+    &--wide {
+        @media (min-width: 768px) {
+            grid-template-columns: 1fr 1fr auto;
+            gap: 16px;
+            padding: 32px;
+
+            .reg-form__policy {
+                grid-column: 1 / -1;
+
+                text-align: center;
+            }
+        }
+    }
+}
+
+.reg-form__policy {
+    color: var(--black);
+    opacity: 0.24;
+}
+
