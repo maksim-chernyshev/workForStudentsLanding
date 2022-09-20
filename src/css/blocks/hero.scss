@@ -1,13 +1,17 @@
 .hero {
     position: relative;
+    overflow: hidden;
     padding-top: 114px;
+    padding-bottom: 20px;
 
     @media (min-width: 768px) {
         padding-top: 128px;
+        padding-bottom: 32px;
     }
 
     @media (min-width: 1024px) {
         padding-top: 204px;
+        padding-bottom: 50px;
     }
 
     @media (min-width: 1440px) {
