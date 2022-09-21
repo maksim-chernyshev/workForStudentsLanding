@@ -28,8 +28,8 @@
         line-height: 20px;
     }
 
-    &--bolder {
-       font-weight: 800;
+    &--thinner {
+        font-weight: 400;
     }
 
     &--black {
@@ -68,10 +68,6 @@
 
         &--bolder {
             font-weight: 800;
-        }
-
-        &--thiner {
-            font-weight: 400;
         }
     }
 }
