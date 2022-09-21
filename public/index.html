@@ -493,6 +493,57 @@
             </li>
         </ul>
     </section>
+
+    <section class="form content-wrapper">
+        <div class="form__inner">
+            <h2 class="form__title heading heading--2">Начни зарабатывать уже сегодня</h2>
+
+            <form class="form__form reg-form"
+                  action="https://a24.biz/reg/promoAuthor"
+                  method="post"
+            >
+                <input type="hidden" name="secondname" value="Фамилия">
+                <input class="reg-form__input input"
+                       type="text"
+                       placeholder="Твое имя"
+                       name="firstname"
+                       aria-label="Укажите свое имя"
+                       required
+                >
+                <input class="reg-form__input input"
+                       type="email"
+                       name="email"
+                       aria-label="Укажите свой email"
+                       placeholder="E-mail"
+                       required
+                >
+                <button class="reg-form__submit-btn button" type="submit">Начать зарабатывать</button>
+
+                <p class="reg-form__policy text">
+                    Нажимая на&nbsp;кнопку, я&nbsp;соглашаюсь на&nbsp;обработку персональных данных и&nbsp;с&nbsp;правилами
+                    пользования Платформой
+                </p>
+            </form>
+
+            <picture class="form__img">
+                <source media="(min-width: 1440px)"
+                        srcset="img/img-banner-form-1440.webp 1x, img/img-banner-form-1440@2x.webp 2x"
+                        type="image/webp">
+                <source media="(min-width: 1440px)"
+                        srcset="img/img-banner-form-1440.png 1x, img/img-banner-form-1440@2x.png 2x" type="image/png">
+                <source media="(min-width: 1024px)"
+                        srcset="img/img-banner-form-1024.webp 1x, img/img-banner-form-1024@2x.webp 2x"
+                        type="image/webp">
+                <source media="(min-width: 1024px)"
+                        srcset="img/img-banner-form-1024.png 1x, img/img-banner-form-1024@2x.png 2x" type="image/png">
+                <source media="(min-width: 768px)"
+                        srcset="img/img-banner-form-768.webp 1x, img/img-banner-form-768@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 768px)"
+                        srcset="img/img-banner-form-768.png 1x, img/img-banner-form-768@2x.png 2x" type="image/png">
+                <img src="img/img-banner-form-1440.png" alt="Человек с ноутбуком вместо головы">
+            </picture>
+        </div>
+    </section>
 </main>
 
 <script src="js/swiper-bundle.min.js"></script>
