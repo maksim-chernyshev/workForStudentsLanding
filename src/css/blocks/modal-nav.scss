@@ -1,0 +1,47 @@
+.modal-nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+
+    display: block;
+    height: 100vh;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+
+    background-color: var(--black);
+    background-image: url('../img/img-hero-large.png');
+    background-repeat: no-repeat;
+    background-position: right -65px bottom -20px;
+    background-size: 300px;
+}
+
+.modal-nav__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.modal-nav__header {
+    position: relative;
+    margin: 0 0 110px;
+    padding: 0;
+}
+
+.modal-nav__link {
+    display: block;
+    margin-bottom: 16px;
+
+    font-size: 24px;
+    line-height: 30px;
+
+    cursor: pointer;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
